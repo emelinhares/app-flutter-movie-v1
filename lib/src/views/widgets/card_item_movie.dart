@@ -40,29 +40,12 @@ class CardItemMovie extends StatelessWidget {
       child: GestureDetector(
         onTap: () {
           Navigator.pushNamed(context, '/details', arguments: movie.id);
-          // Navigator.pushReplacement(
-          //   context,
-          //   MaterialPageRoute(
-          //     builder: (_) => DetailsMoviePage(
-          //       idMovie: movie.id!,
-          //     ),
-          //   ),
-          // );
         },
         child: Row(
           children: [
             const SizedBox(
               width: 135,
             ),
-            // ClipRRect(
-            //   borderRadius: const BorderRadius.horizontal(
-            //     left: Radius.circular(20),
-            //   ),
-            //   child: Image.network(
-            //     'https://image.tmdb.org/t/p/w154/${movies[index].posterPath}',
-            //     fit: BoxFit.fitHeight,
-            //   ),
-            // ),
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,

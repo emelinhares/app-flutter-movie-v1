@@ -14,12 +14,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter',
       onGenerateRoute: RouteGenerator.generateRoute,
-      // initialRoute: '/',
-      // routes: {
-      //   '/': (context) => const HomePage(),
-      // },
     );
   }
 }
